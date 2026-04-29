@@ -1,0 +1,29 @@
+1. sudo apt install python3-pip python3-dev -y
+2. sudo apt install python3-opencv -y
+3. sudo apt install tesseract-ocr -y
+4. sudo apt install tesseract-ocr-eng -y
+5. sudo apt install tesseract-ocr-mar -y
+6. pip3 install pytesseract --break-system-packages
+7. pip3 install pytesseract --break-system-packages
+8. sudo mkdir -p /usr/share/tesseract-ocr/5/tessdata/
+9. sudo cp /usr/share/tesseract-ocr/4.00/tessdata/*.traineddata /usr/share/tesseract-ocr/5/tessdata/
+10. pip3 install gTTS --break-system-packages
+11. sudo apt install mpg123 -y
+12. sudo apt install omxplayer -y
+13. sudo apt install espeak -y
+14. sudo apt install libatlas-base-dev -y
+15. sudo apt install libjpeg-dev -y
+16. sudo apt install libtiff5 -y
+17. sudo apt install libopenjp2-7 -y
+18. mpg123 /usr/share/sounds/alsa/Front_Center.wav
+
+if audio is not comming from raspberry pi:
+1. sudo apt install pulseaudio-utils -y
+2. sudo apt install pipewire-pulse -y
+3. reboot
+2. pactl info
+3. pactl list short sinks
+4. pactl set-default-sink alsa_output.platform-fef00700.hdmi.hdmi-stereo
+5. systemctl --user restart pipewire pipewire-pulse wireplumber
+6. sudo reboot
+
