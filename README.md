@@ -1,0 +1,1 @@
+# Smart-Reader-For-Blind-People-Using-Raspberry-pi
